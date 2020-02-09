@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h1>Google Books</h1>
+
+<input #title type="text">
+
+<button
+(click)="search(title.value); title.value=''">  Buscar</button>
+<p *ngFor="let book of books">Libro:  {{book.title}}  #### Autores: <b>{{book.authors}}</b></p>
+
+
+<p *ngFor="let titulo of titulos">{{titulo}}</p>
+
+
+  
